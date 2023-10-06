@@ -1,0 +1,46 @@
+#home-r {
+    cursor: pointer;
+    width: 500px;
+    height: 500px;
+    background-image: url('../assets/snake.jpg');
+    background-size: cover; /* Para cubrir todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex; /* Hacer que los elementos internos se alineen verticalmente */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 0;
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: relative; /* Agregar posición relativa para posicionar el botón */
+  }
+  
+  button {
+    background-color: green;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
+  }
+  
+  button:hover {
+    background-color: orange;
+  }
+  
+  button:disabled {
+    background-color: grey;
+  }
+  
+  p {
+    font-family: Helvetica, Arial, sans-serif; /* Proporcionar alternativas de fuente */
+    font-weight: bold;
+    width: 100%; /* Ancho completo para que se ajuste al contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-top: 10px; /* Espacio superior */
+  }
+  
+  .game-r {
+    margin: 0 auto;
+    max-width: 500px; /* Establecer un ancho máximo para evitar que el juego se extienda demasiado en pantallas grandes */
+  }
+  
