@@ -76,7 +76,9 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;" class="mt-5">
     <div class='game-r'>
       <div id='home-r'>
+
         <canvas id='mycanvas' width='500' height='500'></canvas>
+        
       </div>
       <center>
         <button id='btn'>START</button>
@@ -84,6 +86,10 @@
       </center>
       
       <script>
+        mycanvas.addEventListener('click', function() {
+        // Inicia el juego cuando se hace clic en la imagen
+        drawModule.init();
+        });
         // Función para manejar eventos de teclado
         function handleKeydown(event) {
           // Lista de códigos de teclas de flecha que quieres capturar
